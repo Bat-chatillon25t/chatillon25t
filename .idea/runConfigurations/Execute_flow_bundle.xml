@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Execute flow bundle" type="PythonConfigurationType" factoryName="Python">
+    <module name="flow-kit-bundle_AMD64" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="TEST_GUIDE_AUTH_KEY" value="PUT_YOUR_TEST_GUIDE_AUTH_KEY_HERE" />
+      <env name="FLOW_KIT_HIDE_TEST_GUIDE_AUTH_KEY" value="True" />
+      <env name="TEST_GUIDE_PROJECT_ID" value="1" />
+      <env name="TEST_GUIDE_URL" value="localhost" />
+      <env name="TRIGGER_PAYLOAD" value="{&quot;flowTriggerId&quot;:1,&quot;projectId&quot;:1,&quot;event&quot;:{&quot;releaseId&quot;:1,&quot;newState&quot;:&quot;UNLOCKED&quot;,&quot;timestamp&quot;:1706099871175,&quot;eventType&quot;:&quot;RELEASE_STATE_CHANGE&quot;}} " />
+      <env name="TT_RUN_IN_FLOW_AUTOMATION" value="True" />
+    </envs>
+    <option name="SDK_HOME" value="" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="true" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+    <option name="PARAMETERS" value="--execute" />
+    <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="false" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css"
+     height="531px" preserveAspectRatio="none" style="width:661px;height:531px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 661 531" width="661px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <path d="M19.5,7 L635.57,7 A12.5,12.5 0 0 1 648.07,19.5 L648.07,35.6211 L7,35.6211 L7,19.5 A12.5,12.5 0 0 1 19.5,7 "
+              fill="#C2B2D8" style="stroke:#C2B2D8;stroke-width:1.0;"/>
+        <rect fill="none" height="518.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="641.07"
+              x="7" y="7"/>
+        <line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="648.07" y1="35.6211" y2="35.6211"/>
+        <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="277.535"
+              y="27.1074">Overall Flow
+        </text><!--cluster BatchProcessingBlock-->
+        <g id="cluster_BatchProcessingBlock">
+            <path d="M31.5,140.6211 L548.5,140.6211 A12.5,12.5 0 0 1 561,153.1211 L561,164.2422 L19,164.2422 L19,153.1211 A12.5,12.5 0 0 1 31.5,140.6211 "
+                  fill="#FE7A00" style="stroke:#FE7A00;stroke-width:1.0;"/>
+            <rect fill="none" height="275" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="542"
+                  x="19" y="140.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="19" x2="561" y1="164.2422" y2="164.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="220"
+                  y="160.7285">BatchProcessingBlock
+            </text>
+        </g><!--cluster p2-->
+        <g id="cluster_p2">
+            <path d="M63.5,228.6211 L524.5,228.6211 A12.5,12.5 0 0 1 537,241.1211 L537,252.2422 L51,252.2422 L51,241.1211 A12.5,12.5 0 0 1 63.5,228.6211 "
+                  fill="#C2B2D8" style="stroke:#C2B2D8;stroke-width:1.0;"/>
+            <rect fill="none" height="149" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="486"
+                  x="51" y="228.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="51" x2="537" y1="252.2422" y2="252.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="87"
+                  x="250.5" y="248.7285">Inner Flow
+            </text>
+        </g>
+        <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="255.5"
+              y="119.1074">PAR_LIST
+        </text>
+        <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="246" y="134.6211"/>
+        <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="408.5"
+              y="119.1074">~par1~
+        </text>
+        <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="401" y="134.6211"/>
+        <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="480.5"
+              y="119.1074">~par2~
+        </text>
+        <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="473" y="134.6211"/>
+        <g id="p1.BatchProcessingBlock.p2.InnerBlock1">
+            <rect fill="#F1F1F1" height="54.582" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="213" x="299.5" y="273.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="299.5" x2="512.5" y1="302.2422" y2="302.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="369"
+                  y="293.7285">InnerBlock1
+            </text>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="193"
+                  x="304.5" y="320.1914">out_block of BatchProcessingBlock
+            </text>
+        </g>
+        <g id="p1.BatchProcessingBlock.p2.InnerBlock2">
+            <rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="94"
+                  x="187" y="276.1211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="187" x2="281" y1="304.7422" y2="304.7422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="197"
+                  y="296.2285">InnerBlock2
+            </text>
+        </g>
+        <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="404"
+              y="398.7285">&#160;
+        </text>
+        <rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="400" y="371.6211"/>
+        <g id="p1.BlockWithListOutput">
+            <rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="147"
+                  x="178.5" y="47.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="178.5" x2="325.5" y1="76.2422" y2="76.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="127"
+                  x="188.5" y="67.7285">BlockWithListOutput
+            </text>
+        </g>
+        <g id="p1.Block1">
+            <rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="62"
+                  x="370" y="47.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="370" x2="432" y1="76.2422" y2="76.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="380"
+                  y="67.7285">Block1
+            </text>
+        </g>
+        <g id="p1.Block2">
+            <rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="62"
+                  x="450" y="47.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="450" x2="512" y1="76.2422" y2="76.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="460"
+                  y="67.7285">Block2
+            </text>
+        </g>
+        <g id="p1.ListConsumerBlock">
+            <rect fill="#F1F1F1" height="54.582" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="262" x="275" y="460.6211"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="275" x2="537" y1="489.2422" y2="489.2422"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="14" lengthAdjust="spacing" textLength="121"
+                  x="345.5" y="480.7285">ListConsumerBlock
+            </text>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="242" x="280"
+                  y="507.1914">Block that accepts list of items as parameter
+            </text>
+        </g><!--link PAR_LIST to InnerBlock1-->
+        <g id="link_PAR_LIST_InnerBlock1">
+            <path d="M258.14,143.7111 C267.45,147.0811 285.37,154.3911 298,164.6211 C336.92,196.1411 367.6581,238.9323 386.6581,268.5223 "
+                  fill="none" id="PAR_LIST-to-InnerBlock1" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="389.9,273.5711,388.4031,263.8367,387.1984,269.3638,381.6713,268.1592,389.9,273.5711"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="319"
+                  y="179.6494">batch_item
+            </text>
+        </g><!--link par1 to InnerBlock1-->
+        <g id="link_par1_InnerBlock1">
+            <path d="M406.97,146.8911 C406.84,166.3411 406.4474,228.8812 406.2074,267.3812 " fill="none"
+                  id="par1-to-InnerBlock1" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="406.17,273.3811,410.226,264.4062,406.2012,268.3812,402.2262,264.3563,406.17,273.3811"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="407"
+                  y="179.6494">var_1
+            </text>
+        </g><!--link par2 to InnerBlock1-->
+        <g id="link_par2_InnerBlock1">
+            <path d="M476.57,146.8911 C467.62,166.3411 438.5598,229.4312 420.8298,267.9312 " fill="none"
+                  id="par2-to-InnerBlock1" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="418.32,273.3811,425.7179,266.8795,420.4115,268.8395,418.4514,263.5331,418.32,273.3811"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="469"
+                  y="179.6494">var_2
+            </text>
+        </g><!--link PAR_LIST to InnerBlock2-->
+        <g id="link_PAR_LIST_InnerBlock2">
+            <path d="M245.79,146.5311 C241,150.7411 234.74,157.2811 232,164.6211 C218.2,201.5311 222.2096,242.2529 227.3996,270.0729 "
+                  fill="none" id="PAR_LIST-to-InnerBlock2" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="228.5,275.9711,230.7816,266.3902,227.583,271.0559,222.9173,267.8573,228.5,275.9711"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="233"
+                  y="179.6494">batch_item
+            </text>
+        </g><!--link InnerBlock1 to BLOCK_RESULT-->
+        <g id="link_InnerBlock1_BLOCK_RESULT">
+            <path d="M406,329.0211 C406,344.5211 406,356.6211 406,365.3711 " fill="none"
+                  id="InnerBlock1-to-BLOCK_RESULT" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="406,371.3711,410,362.3711,406,366.3711,402,362.3711,406,371.3711"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link p2 to p2-->
+        <g id="link_p2_p2">
+            <path d="M536,300.5211 C542.21,288.1211 554.07,288.3211 554.07,301.1211 C554.07,313.9211 544.8967,319.4859 538.6867,307.0859 "
+                  fill="none" id="p2-to-p2" style="stroke:#808080;stroke-width:2.0;"/>
+            <polygon fill="#808080"
+                     points="536,301.7211,536.4536,311.5595,538.239,306.1918,543.6067,307.9772,536,301.7211"
+                     style="stroke:#808080;stroke-width:2.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="72"
+                  x="560.07" y="306.6494">iterate items
+            </text>
+        </g><!--link BlockWithListOutput to PAR_LIST-->
+        <g id="link_BlockWithListOutput_PAR_LIST">
+            <path d="M252,97.8211 C252,111.2111 252,120.6911 252,128.5211 " fill="none"
+                  id="BlockWithListOutput-to-PAR_LIST" style="stroke:#181818;stroke-width:2.0;"/>
+            <polygon fill="#181818" points="252,134.5211,256,125.5211,252,129.5211,248,125.5211,252,134.5211"
+                     style="stroke:#181818;stroke-width:2.0;"/>
+        </g><!--link Block1 to par1-->
+        <g id="link_Block1_par1">
+            <path d="M403.2,97.8211 C404.42,111.2111 405.2706,120.7163 405.9906,128.5463 " fill="none"
+                  id="Block1-to-par1" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="406.54,134.5211,409.6991,125.1926,406.0822,129.5421,401.7327,125.9252,406.54,134.5211"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link Block2 to par2-->
+        <g id="link_Block2_par2">
+            <path d="M480.27,97.8211 C479.86,111.2111 479.5738,120.6939 479.3338,128.5239 " fill="none"
+                  id="Block2-to-par2" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="479.15,134.5211,483.4239,125.6479,479.3032,129.5234,475.4276,125.4028,479.15,134.5211"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link BLOCK_RESULT to ListConsumerBlock-->
+        <g id="link_BLOCK_RESULT_ListConsumerBlock">
+            <path d="M406,383.8511 C406,397.4011 406,428.3511 406,454.1611 " fill="none"
+                  id="BLOCK_RESULT-to-ListConsumerBlock" style="stroke:#181818;stroke-width:2.0;"/>
+            <polygon fill="#181818" points="406,460.1611,410,451.1611,406,455.1611,402,451.1611,406,460.1611"
+                     style="stroke:#181818;stroke-width:2.0;"/>
+            <text fill="#000000" font-family="Red Hat Display,sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="407"
+                  y="438.6494">[...]
+            </text>
+        </g><!--SRC=[bLFBRi8m4BpdArPmwAK9Yey88HNK0sea453rWAh819T4TMmhTgXG1TzUsmbGXvIsliIFcTtPsSrTgfIG_LvFKCnKcTCWuNbFAgo8lydmji2vvzaZTAOxKc1AOLRmX4ZP0In1XD2bsJPLUq8f_u1FpmEzAiQ8ykJz9LDfb4arBPKeLVCrR5uW9m1MILgdozZM0g2Rx37JYU2yQdrmjMOFypYQB9PMwka0Wq76j1IHiU7mTfIZm4Luh0hLktyoqPc9Vc5E62E5wojg-kfMPXcLWz07NgfuRStXRwscUUs-WEyF6w7MXXrdYkGDZZNW6h_3HHnUGz4FKFGt9SXLSgDumnj5q_5JF7zSF4VB9lRK6-lgTw1k2RSZwVRaSDxf5lYhDQUR-wx-3VQlEf4mkhIYmiGqokGbNSkmrtp3FDNfmYlvnbdt7ftkAxiE9ekZ_HBOP1jp9ikyjaGhN0L1yAefRM_LLwLO0KuI8fG4gc5cS6n1zSJYdEWolSCN]-->
+    </g>
+</svg>

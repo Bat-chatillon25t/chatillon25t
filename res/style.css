@@ -1,0 +1,108 @@
+
+.nav-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 35ch;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100%;
+}
+
+.content {
+    margin-left: 35ch;
+}
+
+div {
+    margin-left: 1ch;
+}
+
+body {
+    font-family: "Red Hat Display",sans-serif;
+}
+
+h1, .collectionTitle {
+    background-color: #FE7A00;
+    color: white;
+    padding-left: 1ch;
+    font-family: "Red Hat Mono",monospace;
+}
+
+h2, .blockTitle {
+    padding-left: 1ch;
+    font-family: "Red Hat Mono",monospace;
+    font-weight: normal;
+}
+
+h3{
+    padding-left: 1ch;
+}
+
+h4{
+    padding-left: 2ch;
+}
+
+h5, h6{
+    padding-left: 3ch;
+}
+
+code {
+    font-family: "Red Hat Mono",monospace;
+}
+
+:not(li)>p {
+    margin-left: 2ch;
+}
+
+:not(.codehilite)>pre {
+    background-color: #FFCA99;
+}
+
+.codehilite {
+    margin-left: 3ch;
+    padding-left: 2ch;
+    border: solid 3px #999999;
+    background-color: #F2F2F2 !important;
+}
+
+.codehilite .kn {
+    color: #FE7A00;
+    font-weight: 500;
+}
+
+.codehilite .k {
+    color: #FE7A00;
+    font-weight: 500;
+}
+
+.codehilite .sd, .codehilite .s1 {
+    color: #C2B2D8;
+    font-style: italic;
+}
+
+.codehilite .sd {
+    font-weight: 500;
+}
+
+.codehilite .c1 {
+    color: #8D9F99;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.codehilite .nf {
+    font-weight: 500;
+}
+
+.codehilite .n, .codehilite .nn {
+    font-weight: 500;
+}
+
+.codehilite .p, .codehilite .o {
+    font-weight: 600;
+}
+
+a {
+    color:  #FE7A00;
+}

@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Validate flow bundle (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "args": [
+                "--validate"
+            ],
+            "env": {
+                "TT_RUN_IN_FLOW_AUTOMATION": "True"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Visualize flow definition [experimental] (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "args": [
+                "--visualize"
+            ],
+            "env": {
+                "TT_RUN_IN_FLOW_AUTOMATION": "True"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Execute flow bundle (debug)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "args": [
+                "--execute"
+            ],
+            "env": {
+                "TEST_GUIDE_AUTH_KEY": "PUT_YOUR_TEST_GUIDE_AUTH_KEY_HERE",
+                "FLOW_KIT_HIDE_TEST_GUIDE_AUTH_KEY": "True",
+                "TEST_GUIDE_PROJECT_ID": "1",
+                "TEST_GUIDE_URL": "localhost",
+                "TRIGGER_PAYLOAD": "{\"flowTriggerId\":1,\"projectId\":1,\"event\":{\"releaseId\":1,\"newState\":\"UNLOCKED\",\"timestamp\":1706099871175,\"eventType\":\"RELEASE_STATE_CHANGE\"}}",
+                "TT_RUN_IN_FLOW_AUTOMATION": "True"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

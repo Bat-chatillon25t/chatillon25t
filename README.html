@@ -1,0 +1,478 @@
+<title>flow.kit - README.html</title>
+<link rel="stylesheet" href="res/style.css">
+
+<h1 id="welcome-to-the-flowkit-documentation">Welcome to the flow.kit documentation</h1>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<p><!-- TOC -->
+* <a href="#concept">Concept</a>
+* <a href="#bundle-content">Bundle-content</a>
+  * <a href="#flow_definitionpy">flow_definition.py</a>
+    * <a href="#how-to-use-add_block_with">How to use .add_block_with()</a>
+      * <a href="#example-code">Example code</a>
+  * <a href="#mainpy">main.py</a>
+  * <a href="#flow_kit">flow_kit</a>
+    * <a href="#core">core</a>
+    * <a href="#library">library</a>
+    * <a href="#tools">tools</a>
+  * <a href="#interpreter">interpreter</a>
+  * <a href="#site-packages">site-packages</a>
+  * <a href="#examples">examples</a>
+* <a href="#sample-flow">Sample flow</a>
+* <a href="#testguide-blocks">test.guide blocks</a>
+* <a href="#user-specific-blocks">User specific blocks</a>
+* <a href="#instructions-for-integrating-the-flow-in-testguide">Instructions for integrating the flow in test.guide</a>
+  * <a href="#initial-setup-of-workflow-automation-runners">Initial setup of workflow automation runners</a>
+  * <a href="#implementation-and-trigger-configuration-of-a-workflow">Implementation and trigger configuration of a workflow</a>
+  * <a href="#navigation-in-testguide">Navigation in test.guide</a>
+  * <a href="#flow-tasks">Flow tasks</a>
+  * <a href="#event-filter-in-flow-triggers">Event filter in flow triggers</a>
+  * <a href="#environment-variables">Environment variables</a>
+* <a href="#ide-setup-for-flow-implementation">IDE-setup for flow implementation</a>
+  * <a href="#visual-studio-code-vscode">Visual Studio Code (.vscode)</a>
+  * <a href="#pycharm-idea">PyCharm (.idea)</a>
+<!-- TOC --></p>
+
+<h1 id="concept">Concept</h1>
+
+<p>The flow.kit enables test.guide users to define workflow automations in a user-friendly way.
+For this purpose, it provides generic flow blocks that implement atomic functions.
+These blocks can be parametrized and linked with each other according to the requirements
+of the flow to be automated.</p>
+
+<p>Once a flow has been implemented with the flow.kit, it is loaded to test.guide and linked
+to an event type. For each occurring event of the linked type a flow task is created,
+which runs the flow defined with the flow.kit on one of the test resources of test.guide.
+This means that workflow automation with the flow.kit does not require any additional infrastructure
+but can be executed directly on the existing test resources/testbenches of test.guide.</p>
+
+<h1 id="bundle-content">Bundle-content</h1>
+
+<p>The flow.kit-bundle is a self-contained zip-file.</p>
+
+<p>The following sections describe the contents of the individual folders.</p>
+
+<h2 id="flow_definitionpy">flow_definition.py</h2>
+
+<p>This file defines a <code>get_flow()</code>-function that returns a <code>flow_kit.Flow</code> object,
+which is the specific flow implementation.</p>
+
+<p>For better usability the <code>flow_kit.FlowBuilder</code>
+should be used to define the flow. The flow should be defined by adding multiple configured flow blocks
+using the <code>.add_block_with()</code> method of the FlowBuilder.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flow</span><span class="p">,</span> <span class="n">FlowBuilder</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_flow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Flow</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define the flow to be executed.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">FlowBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">([</span><span class="o">.....</span><span class="p">])</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">([</span><span class="o">.....</span><span class="p">])</span>
+        <span class="p">[</span><span class="o">.....</span><span class="p">]</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<h3 id="how-to-use-add_block_with">How to use .add_block_with()</h3>
+
+<p>With the method <code>.add_block_with(block, *parameter_assignments, required_blocks=, result_alias=)</code> of a <code>FlowBuilder</code>
+object a block can be added and fully configured.</p>
+
+<ul>
+<li><p>First parameter is the new block itself.</p>
+
+<ul>
+<li>It is recommended to use an assignment expression (<code>:=</code>) here to store the block in a variable.
+So the block can be used as input or dependency for other blocks.</li>
+<li>To set a user defined label for the block the method <code>.with_label(label)</code> can be used on every block object.</li>
+</ul></li>
+<li><p>All other positional parameters are treated as assignments to the block parameters:</p>
+
+<ul>
+<li>Three kinds of assignments are available:
+<ul>
+<li><code>Assign(parameter_key).to_static_value(value)</code> sets a fixed value to the parameter with given parameter_key.</li>
+<li><code>Assign(parameter_key).to_block_result(result_block)</code> links a result of a block to the parameter with given
+parameter_key.
+<ul>
+<li>For this, the required block should be saved using assignment expression.</li>
+</ul></li>
+<li><code>Assign(parameter_key).to_user_expression(expression)</code> enables the user to define any python expression.
+<ul>
+<li>The result of all blocks with defined <code>result_alias</code> are available as identifier for this expression.</li>
+<li>Always remember to add the blocks used in expression to required_blocks, to ensure that they are execute
+first.</li>
+</ul></li>
+</ul></li>
+<li>The <code>parameter_key</code> should be given as the corresponding constant in the class of the block.</li>
+</ul></li>
+<li><p>The keyword parameter <code>result_alias=</code> must be set,
+if the result of the block should be used in the python expression inside a <code>Assign(...).to_user_expression(...)</code>.</p></li>
+<li><p>The keyword parameter <code>required_blocks=</code> can be set to define blocks that have to be executes earlier.</p></li>
+</ul>
+
+<h4 id="example-code">Example code</h4>
+
+<div class="codehilite">
+<pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">PurePath</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Flow</span><span class="p">,</span>
+    <span class="n">FlowBuilder</span><span class="p">,</span>
+    <span class="n">Assign</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_flow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Flow</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define the flow to be executed.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">FlowBuilder</span><span class="p">()</span>
+
+        <span class="c1"># Block that will be used in Assign(...).to_block_result(...)</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">(</span>
+            <span class="n">block_a</span> <span class="o">:=</span> <span class="n">BlockA</span><span class="p">()</span><span class="o">.</span><span class="n">with_label</span><span class="p">(</span><span class="s1">&#39;Block whose result is used directly.&#39;</span><span class="p">),</span>
+            <span class="c1"># variable block_a is needed later to link this block in a Assign(...).to_block_result(...)</span>
+            <span class="p">[</span><span class="o">...</span><span class="p">],</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Block that will be used in Assign(...).to_user_expression(...)</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">(</span>
+            <span class="n">block_b</span> <span class="o">:=</span> <span class="n">BlockB</span><span class="p">()</span><span class="o">.</span><span class="n">with_label</span><span class="p">(</span><span class="s1">&#39;Block whose result will be adjusted&#39;</span><span class="p">),</span>
+            <span class="c1"># variable block_b is needed later to link this block as required</span>
+            <span class="p">[</span><span class="o">...</span><span class="p">],</span>
+            <span class="n">result_alias</span><span class="o">=</span><span class="s1">&#39;block_b_alias&#39;</span><span class="p">,</span>
+            <span class="c1"># result_alias must be set here, because result of this block will be used </span>
+            <span class="c1"># in a Python expression in Assign(...).to_user_expression(...).</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Block that has 3 parameters to show usage of parameter assignments with Assign.</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">(</span>
+            <span class="n">BlockC</span><span class="p">()</span><span class="o">.</span><span class="n">with_label</span><span class="p">(</span><span class="s1">&#39;Block to show usage of parameter assignments.&#39;</span><span class="p">),</span>
+            <span class="n">Assign</span><span class="p">(</span>
+                <span class="n">BlockC</span><span class="o">.</span><span class="n">PAR__A</span><span class="p">)</span>  <span class="c1"># parameter key should be given as the corresponding constant in the class of the block.</span>
+            <span class="o">.</span><span class="n">to_static_value</span><span class="p">(</span>
+                <span class="n">PurePath</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">temp&#39;</span><span class="p">)</span>  <span class="c1"># value is directly given as python object.</span>
+            <span class="p">),</span>
+            <span class="n">Assign</span><span class="p">(</span>
+                <span class="n">BlockC</span><span class="o">.</span><span class="n">PAR__B</span><span class="p">)</span>  <span class="c1"># parameter key should be given as the corresponding constant in the class of the block.</span>
+            <span class="o">.</span><span class="n">to_block_result</span><span class="p">(</span>
+                <span class="n">block_a</span>  <span class="c1"># block whose result is to be used</span>
+            <span class="p">),</span>
+            <span class="n">Assign</span><span class="p">(</span>
+                <span class="n">BlockC</span><span class="o">.</span><span class="n">PAR__C</span><span class="p">)</span>  <span class="c1"># parameter key should be given as the corresponding constant in the class of the block.</span>
+            <span class="o">.</span><span class="n">to_user_expression</span><span class="p">(</span>
+                <span class="s1">&#39;str(block_b_alias.get_id())&#39;</span>
+                <span class="c1"># expression as str which may use all defined aliases and python builtins.</span>
+            <span class="p">),</span>
+            <span class="n">required_blocks</span><span class="o">=</span><span class="p">[</span>
+                <span class="c1"># block_a,  # this is optional because Assign(...).to_block_result(...) already adds block_a</span>
+                <span class="n">block_b</span><span class="p">,</span>
+                <span class="c1"># this is mandatory because alias of block_b is used in a Python expression inside an Assign(...).to_user_expression()</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="mainpy">main.py</h2>
+
+<blockquote>
+  <p><strong>WARNING:</strong> This file must not be modified!</p>
+</blockquote>
+
+<p>This file will be called when executing the defined flow. It accepts 3 arguments:</p>
+
+<ul>
+<li><code>--validate</code> will perform a static validation of the flow.</li>
+<li><code>--execute</code> will execute the flow.</li>
+<li><strong>Experimental Feature</strong>: <code>--visualize</code> will create a _Workflow.puml_ file in your working
+directory, which contains a graphical representation of the described workflow.</li>
+</ul>
+
+<blockquote>
+  <p><strong>NOTE:</strong> For local test runs, it must be ensured that the required environment variables are provided.
+  These are <code>TRIGGER_PAYLOAD</code>, <code>TEST_GUIDE_AUTH_KEY</code>, <code>TEST_GUIDE_PROJECT_ID</code>, <code>TEST_GUIDE_URL</code>, <code>TT_RUN_IN_FLOW_AUTOMATION</code>
+  and others that are required by the specific flow.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>WARNING:</strong> <code>--visualize</code> is still under development and does not support all features.</p>
+</blockquote>
+
+<h2 id="flow_kit">flow_kit</h2>
+
+<p>This directory is a python module, containing the generic implementations of the flow.kit.</p>
+
+<blockquote>
+  <p><strong>WARNING:</strong> This directory must not be modified!</p>
+</blockquote>
+
+<h3 id="core">core</h3>
+
+<p>This directory contains core functions of the flow blocks and the flow.</p>
+
+<h3 id="library">library</h3>
+
+<p>This directory contains all blocks that can be used to define the flow.
+Refer to <a href="builtin_blocks_documentation.html">builtin_blocks_documentation.html</a>
+for documentation of all blocks.</p>
+
+<h3 id="tools">tools</h3>
+
+<p>This directory contains additional functionality needed by <code>core</code> or <code>library</code>.</p>
+
+<h2 id="interpreter">interpreter</h2>
+
+<p>This directory contains a portable python 3.12 interpreter for windows.</p>
+
+<h2 id="site-packages">site-packages</h2>
+
+<p>This directory contains the python site-packages needed by the generic flow.kit implementation.</p>
+
+<h2 id="examples">examples</h2>
+
+<p>This directory contains example flow definitions with detailed description.</p>
+
+<h1 id="sample-flow">Sample flow</h1>
+
+<p>This bundle is delivered with a sample flow definition:</p>
+
+<p>The automation task is: Start a PDF report generation, whenever a release is locked.
+To do this, this flow must be linked to a ReleaseStateChangedEvent in a flow trigger in test.guide.</p>
+
+<p>The following figure shows the structure of the example flow.
+Solid links between blocks represent a data flow. Dashed links represent a dependency without data flow.
+First line of text in a block is a user-friendly description of what the block does in this flow.
+Second line of text in a block is the python class name of the block.</p>
+
+<p><img src="res/sample_flow.svg" alt="sample flow structure" /></p>
+
+<ul>
+<li>The first block <em>(ReleaseStateChangedTrigger)</em> is a trigger-block,
+that provides the payload of the event that triggered the flow.</li>
+<li>The second block <em>(ConditionalSkip)</em> is used to skip all following blocks, if the triggering event is not LOCKED.</li>
+<li>After that the available report templates are retrieved from the test.guide server <em>(RetrieveAllTemplates)</em>.</li>
+<li>User defined blocks <em>(GenericUserCode)</em> calculate data
+required for final block <em>(StartReportGeneration)</em> that starts the PDF export task.</li>
+</ul>
+
+<h1 id="testguide-blocks">test.guide blocks</h1>
+
+<p>The flow.kit provides a set of blocks for interaction with test.guide. 
+The test.guide server, which should be addressed, and authentication key can be customized by using the <em>TGInit</em> block.
+If no custom configuration is set, the default configuration is used. 
+* Default values:
+  * test.guide url in ResourceAdapter configuration
+  * test.guide project id in ResourceAdapter configuration
+  * test.guide authentication key of flow trigger user</p>
+
+<h1 id="user-specific-blocks">User specific blocks</h1>
+
+<p>For complex logic or special services that are not provided by the BuiltIn blocks,
+user code blocks can be implemented.
+For this purpose, the <code>flow_kit.library.user_code.GenericUserCode</code> block is available.</p>
+
+<p>A Python function is passed to this in the constructor,
+from which the parameter and result definitions are automatically determined.
+The Python function must be fully typed for this.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Assign</span><span class="p">,</span> <span class="n">Flow</span><span class="p">,</span> <span class="n">FlowBuilder</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit.library.user_code</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenericUserCode</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_item_count</span><span class="p">(</span><span class="n">item_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">item_list</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_flow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Flow</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define the flow to be executed.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">FlowBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">(</span>
+            <span class="c1"># Initialize GenericUserCode-Block</span>
+            <span class="n">GenericUserCode</span><span class="p">(</span><span class="n">get_item_count</span><span class="p">),</span>
+            <span class="c1"># argument is the function itself, so no brackets are allowed</span>
+
+            <span class="c1"># add parameter assignments</span>
+            <span class="n">Assign</span><span class="p">(</span><span class="s1">&#39;item_list&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_static_value</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]),</span>
+            <span class="c1"># key of the parameter &#39;item_list&#39; is the parameter name equals the argument name of get_item_count()</span>
+        <span class="p">)</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+
+<p>User code that uses the ecu.test ObjectAPI can be implemented directly with
+the <code>flow_kit.library.ecu_test.ObjectApiUserCode</code> block.
+The implemented function must have an api parameter that does not require typing or parameter assignment.
+The api-parameter will hold a ApiClient-object of the objectApi.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">PurePath</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Assign</span><span class="p">,</span> <span class="n">Flow</span><span class="p">,</span> <span class="n">FlowBuilder</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flow_kit.library.ecu_test</span><span class="w"> </span><span class="kn">import</span> <span class="n">ObjectApiUserCode</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">do_things_with_object_api</span><span class="p">(</span><span class="n">api</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PurePath</span><span class="p">:</span>
+    <span class="n">package</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">PackageApi</span><span class="o">.</span><span class="n">CreatePackage</span><span class="p">()</span>
+    <span class="n">package</span><span class="o">.</span><span class="n">Save</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;.pkg&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">PurePath</span><span class="p">(</span><span class="n">package</span><span class="o">.</span><span class="n">GetFilename</span><span class="p">())</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_flow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Flow</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define the flow to be executed.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">FlowBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">add_block_with</span><span class="p">(</span>
+            <span class="n">ObjectApiUserCode</span><span class="p">(</span><span class="n">do_things_with_object_api</span><span class="p">),</span>
+            <span class="n">Assign</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_static_value</span><span class="p">(</span><span class="s1">&#39;package_name&#39;</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+
+<h1 id="instructions-for-integrating-the-flow-in-testguide">Instructions for integrating the flow in test.guide</h1>
+
+<h2 id="initial-setup-of-workflow-automation-runners">Initial setup of workflow automation runners</h2>
+
+<ul>
+<li><strong>Configure</strong> the FlowAutomation Plugin on ResourceAdapters you want to use to execute the flow.
+<ul>
+<li>Ensure that the selected resources have access to all systems required during the flow execution.</li>
+<li>Flow tasks will be executed in parallel to execution tasks. Ensure that your flow does not interfere with test
+executions.</li>
+<li>Add the following lines to the <code>resourceAdapter.config</code> file
+<pre><code>plugin.de.tracetronic.ttstm.monitoring.plugin.flowAutomation.FlowAutomationPlugin.1.config.enabled=true
+plugin.de.tracetronic.ttstm.monitoring.plugin.flowAutomation.FlowAutomationPlugin.1.config.polling=60000
+plugin.de.tracetronic.ttstm.monitoring.plugin.flowAutomation.FlowAutomationPlugin.1.config.resourceLocationId=${resourceLocationId}
+</code></pre></li>
+<li>Additional options are documented in the example config file of the ResourceAdapter.</li>
+</ul></li>
+</ul>
+
+<h2 id="implementation-and-trigger-configuration-of-a-workflow">Implementation and trigger configuration of a workflow</h2>
+
+<ol>
+<li><strong>Customize</strong> flow implementation in <code>flow_definition.py</code> in the zip-file.</li>
+<li><strong>Upload</strong> customized zip-file as artifact to test.guide
+<ul>
+<li>URL: <em>(your test.guide url)</em>/artifacts/overview</li>
+</ul></li>
+<li><strong>Add flow trigger</strong> with name, artifact ID of uploaded zip and event type.
+<ul>
+<li>URL: <em>(your test.guide url)</em>/flow/triggers</li>
+<li>From now on, a flow task is created for each event of the event type configured in the flow trigger to execute the
+flow. The name of the created flow tasks will contain the name and event type of the flow trigger.</li>
+</ul></li>
+</ol>
+
+<h2 id="navigation-in-testguide">Navigation in test.guide</h2>
+
+<p>Sidebar navigation in test.guide for flow related pages can be enabled by setting the feature flag:
+<code>SHOW_FLOW_PREVIEW_IN_NAVIGATION=true</code> in the <code>features.properties</code> file of your test.guide server.</p>
+
+<p>Alternatively the following entry points are available:</p>
+
+<ul>
+<li><em>(your test.guide url)</em>/flow/triggers - configuration of the flow triggers</li>
+<li><em>(your test.guide url)</em>/flow/tasks - overview over created flow tasks</li>
+<li><em>(your test.guide url)</em>/flow/envvariables - configuration of environment variables to use in flow execution</li>
+</ul>
+
+<h2 id="flow-tasks">Flow tasks</h2>
+
+<p>Entrypoint: <em>(your test.guide url)</em>/flow/tasks</p>
+
+<p>Flow tasks introduce a dedicated place for flow executions. You have access to the overview and detail pages for
+flow tasks. After the execution you can see a dedicated report for your flow execution on the detail page of the
+flow task.</p>
+
+<h2 id="event-filter-in-flow-triggers">Event filter in flow triggers</h2>
+
+<p>Event filters can be used to narrow down on which events, you want to execute your flow, even before a flow task
+was created. Such event filters can be configured for some event types by specifying filter items. All specified filter
+items are linked by an AND relation.</p>
+
+<p>If you miss a filter item on some event type, please let us know.</p>
+
+<h2 id="environment-variables">Environment variables</h2>
+
+<p>Entrypoint: <em>(your test.guide url)</em>/flow/envvariables</p>
+
+<p>In this configuration page you can set up environment variables, which are available to all flow tasks of this
+project as environment variable during flow execution.</p>
+
+<p>In order to not leak the set variables these are</p>
+
+<ul>
+<li>stored encrypted in test.guide</li>
+<li>transferred encrypted to ResourceAdapters before flow execution of a flow task</li>
+<li>obfuscated in the report of the flow task</li>
+</ul>
+
+<h1 id="ide-setup-for-flow-implementation">IDE-setup for flow implementation</h1>
+
+<p>For the best support when implementing the flows, we recommend using an IDE
+to be able to use features such as syntax highlighting and auto-completion.</p>
+
+<h2 id="visual-studio-code-vscode">Visual Studio Code (.vscode)</h2>
+
+<p>The bundle contains configuration files for Visual Studio Code in folder <code>.vscode</code>.
+After opening the bundle directory in Visual Studio Code everything should be setup.
+Run configurations for validation, visualization (experimental)  and execution of the flow via <code>main.py</code> are also set
+up.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> For flow execution the Environment variables used by the flow
+  must be setup by the user in the Visual Studio Code run configuration.</p>
+</blockquote>
+
+<h2 id="pycharm-idea">PyCharm (.idea)</h2>
+
+<p>The bundle contains configuration files for PyCharm in folder <code>.idea</code>.
+After opening the bundle directory in PyCharm, only the interpreter needs to be set up once.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> In PyCharm the project interpreter must be set manually.</p>
+  
+  <p>File &gt; Settings &gt; Project: flow-kit-[...] &gt; Python Interpreter &gt; Add Interpreter &gt; Add Local Interpreter ... &gt;
+  System Interpreter &gt; [select python.exe from interpreter folder of the bundle]</p>
+</blockquote>
+
+<p>Run configurations for validation, visualization (experimental) and execution of the flow via <code>main.py</code> are also set
+up.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> For flow execution the Environment variables used by the flow
+  must be setup by the user in the PyCharm run configuration.</p>
+</blockquote>
+
+<p>We recommend the Plugin <a href="https://plugins.jetbrains.com/plugin/12861-pydantic">pydantic</a> for PyCharm. This will help
+with implementing user functions as tg-api-clients library is built on pydantic models.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> If you encounter issues, when trying to debug the flow.kit in the IDE:</p>
+  
+  <p>There is a known issue in newer PyCharm version:
+  <a href="https://youtrack.jetbrains.com/issue/PY-65289/Pytestddtrace-crashes-with-python-3.12-and-2023.3#workaround">JetBrains Issue Tracker</a>.
+  The linked issue also has a workaround. Please be advised: Use the workaround on your own risk.
+  We don't take liability for anything breaking using the workaround.</p>
+</blockquote>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>When PyCharm is initially opened in the bundle folder, a prompt appears asking you to install the required plugins::
+* <a href="https://plugins.jetbrains.com/plugin/12861-pydantic">pydantic</a>
+    * Helps with working on Pydantic models, which are used in the tg-api-clients library.
+* <a href="https://plugins.jetbrains.com/plugin/25007-live-templates-sharing">Live Templates Sharing</a>
+    * Integrates the delivered <a href="https://www.jetbrains.com/help/idea/using-live-templates.html">Live Templates</a> from the 
+bundle into your IDE.
+* <a href="https://plugins.jetbrains.com/plugin/7017-plantuml-integration">PlantUML integration</a>
+    * Renders the output of the visualize run configuration.</p>

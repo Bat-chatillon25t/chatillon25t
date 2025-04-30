@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+state "Overall Flow" as p1 #lightyellow {
+
+    state BlockWithListOutput
+    state Block1
+    state Block2
+
+    state BatchProcessingBlock #cyan {
+          state "                  PAR_LIST" as PAR_LIST <<inputpin>>
+          state "            ~par1~" as par1 <<inputpin>>
+          state "            ~par2~" as par2 <<inputpin>>
+          state "Inner Flow" as p2 #lightyellow {
+              InnerBlock1 : out_block of BatchProcessingBlock
+              PAR_LIST --> InnerBlock1 : batch_item
+              par1 --> InnerBlock1 : var_1
+              par2 --> InnerBlock1 : var_2
+              PAR_LIST --> InnerBlock2 : batch_item
+
+              InnerBlock1 --> BLOCK_RESULT
+
+              state " " as BLOCK_RESULT <<outputpin>>
+        }
+        p2 -[bold,#gray]-> p2 : iterate items
+
+        BlockWithListOutput -[bold]-> PAR_LIST
+        Block1 --> par1
+        Block2 --> par2
+    }
+
+  BLOCK_RESULT -[bold]-> ListConsumerBlock : [...]
+  ListConsumerBlock : Block that accepts list of items as parameter
+}
+@enduml

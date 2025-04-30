@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css"
+     height="485px" preserveAspectRatio="none" style="width:525px;height:485px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 525 485" width="525px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <g id="block_9a22df4fa4fd430885be3cce06c7c7af">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="233" x="30" y="7"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="30" x2="263" y1="54.2422" y2="54.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="213" x="40" y="27.1074">trigger: release state changed
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="189" x="52" y="45.7285">ReleaseStateChangedTrigger
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="35"
+                  y="72.1914">&lt;no result yet&gt;
+            </text>
+        </g>
+        <g id="block_030ab95cf9d547cfbaba71453c5879e4">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="151" x="7" y="140"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="158" y1="187.2422" y2="187.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="131" x="17" y="160.1074">skip if not LOCKED
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="99" x="33" y="178.7285">ConditionalSkip
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="12"
+                  y="205.1914">&lt;no result yet&gt;
+            </text>
+        </g>
+        <g id="block_30341d26ccd7499da2213c7efb11757f">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="242" x="276.5" y="140"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="276.5" x2="518.5" y1="187.2422" y2="187.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="222" x="286.5" y="160.1074">get all defined report templates
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="133" x="331" y="178.7285">RetrieveAllTemplates
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80"
+                  x="281.5" y="205.1914">&lt;no result yet&gt;
+            </text>
+        </g>
+        <g id="block_756d00bfd64d4e788ca7a3d77c3ae6bc">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="134" x="330.5" y="273"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="330.5" x2="464.5" y1="320.2422" y2="320.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="109" x="343" y="293.1074">find template id
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="114" x="340.5" y="311.7285">GenericUserCode
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80"
+                  x="335.5" y="338.1914">&lt;no result yet&gt;
+            </text>
+        </g>
+        <g id="block_12eb4ba6c13446c0a43fdf04e33a1126">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="192" x="103.5" y="273"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="103.5" x2="295.5" y1="320.2422" y2="320.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="172" x="113.5" y="293.1074">calculate export request
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="114" x="142.5" y="311.7285">GenericUserCode
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80"
+                  x="108.5" y="338.1914">&lt;no result yet&gt;
+            </text>
+        </g>
+        <g id="block_9d155ae951214d00bec9bd61a42f2493">
+            <rect fill="#FE7A00" height="73.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="181" x="208" y="406"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="208" x2="389" y1="453.2422" y2="453.2422"/>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="161" x="218" y="426.1074">start report generation
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="144" x="226.5" y="444.7285">StartReportGeneration
+            </text>
+            <text fill="#FFFFFF" font-family="Red Hat Display,sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="213"
+                  y="471.1914">&lt;no result yet&gt;
+            </text>
+        </g><!--link block_9a22df4fa4fd430885be3cce06c7c7af to block_030ab95cf9d547cfbaba71453c5879e4-->
+        <g id="link_block_9a22df4fa4fd430885be3cce06c7c7af_block_030ab95cf9d547cfbaba71453c5879e4">
+            <path d="M129.01,80.3 C119.98,98.78 111.6218,115.878 102.6018,134.358 " fill="none"
+                  id="block_9a22df4fa4fd430885be3cce06c7c7af-to-block_030ab95cf9d547cfbaba71453c5879e4"
+                  style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#181818"
+                     points="99.97,139.75,107.5124,133.4165,102.1632,135.2567,100.323,129.9075,99.97,139.75"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link block_30341d26ccd7499da2213c7efb11757f to block_756d00bfd64d4e788ca7a3d77c3ae6bc-->
+        <g id="link_block_30341d26ccd7499da2213c7efb11757f_block_756d00bfd64d4e788ca7a3d77c3ae6bc">
+            <path d="M397.5,213.3 C397.5,231.78 397.5,248.27 397.5,266.75 " fill="none"
+                  id="block_30341d26ccd7499da2213c7efb11757f-to-block_756d00bfd64d4e788ca7a3d77c3ae6bc"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="397.5,272.75,401.5,263.75,397.5,267.75,393.5,263.75,397.5,272.75"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link block_9a22df4fa4fd430885be3cce06c7c7af to block_12eb4ba6c13446c0a43fdf04e33a1126-->
+        <g id="link_block_9a22df4fa4fd430885be3cce06c7c7af_block_12eb4ba6c13446c0a43fdf04e33a1126">
+            <path d="M158.84,80.43 C164.57,98.19 171.07,120.04 175.5,140 C185.54,185.29 191.6431,232.445 195.3631,266.745 "
+                  fill="none" id="block_9a22df4fa4fd430885be3cce06c7c7af-to-block_12eb4ba6c13446c0a43fdf04e33a1126"
+                  style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#181818"
+                     points="196.01,272.71,199.0163,263.3312,195.4709,267.7391,191.0629,264.1938,196.01,272.71"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link block_030ab95cf9d547cfbaba71453c5879e4 to block_12eb4ba6c13446c0a43fdf04e33a1126-->
+        <g id="link_block_030ab95cf9d547cfbaba71453c5879e4_block_12eb4ba6c13446c0a43fdf04e33a1126">
+            <path d="M114.47,213.3 C130.98,231.78 147.0626,249.7956 163.5726,268.2756 " fill="none"
+                  id="block_030ab95cf9d547cfbaba71453c5879e4-to-block_12eb4ba6c13446c0a43fdf04e33a1126"
+                  style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#181818"
+                     points="167.57,272.75,164.5568,263.3734,164.2388,269.0213,158.5909,268.7033,167.57,272.75"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link block_12eb4ba6c13446c0a43fdf04e33a1126 to block_9d155ae951214d00bec9bd61a42f2493-->
+        <g id="link_block_12eb4ba6c13446c0a43fdf04e33a1126_block_9d155ae951214d00bec9bd61a42f2493">
+            <path d="M226.55,346.3 C240.52,364.78 253.9034,382.4825 267.8634,400.9625 " fill="none"
+                  id="block_12eb4ba6c13446c0a43fdf04e33a1126-to-block_9d155ae951214d00bec9bd61a42f2493"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="271.48,405.75,269.2469,396.1577,268.4662,401.7604,262.8635,400.9797,271.48,405.75"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link block_756d00bfd64d4e788ca7a3d77c3ae6bc to block_9d155ae951214d00bec9bd61a42f2493-->
+        <g id="link_block_756d00bfd64d4e788ca7a3d77c3ae6bc_block_9d155ae951214d00bec9bd61a42f2493">
+            <path d="M370.45,346.3 C356.48,364.78 343.0966,382.4825 329.1366,400.9625 " fill="none"
+                  id="block_756d00bfd64d4e788ca7a3d77c3ae6bc-to-block_9d155ae951214d00bec9bd61a42f2493"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="325.52,405.75,334.1365,400.9797,328.5338,401.7604,327.7531,396.1577,325.52,405.75"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--SRC=[dPFDZjCm58NtUGfhMB0gZMCdRgeg4XGq2v2Gsh82XAxjwzIg6vV4vUVjSLAfxGmZ6cONvTpuV3dt-EKsX4CtdquF3ffmtBjNok-dNO204ssXRc6VT3lR720-aM23mpU-rTYk_B7HIzyss1AQFpspsLgrQx3hIFRqmD8xtnBfGEt-6eZlwlPaqW_zHkVypoH91ZPojv1LQ6rTOpidBJg43ib9KbjeQjIBgQo-D0jRhKxgkXUN9srp-d8njTKTWIuIUBNxLaAMQSCDSACvIsUpN29J2jD22IN0a1VErjiWtH79d2mQ7usxemkHBLHNNF5F3iGQqlX0FdnSld_tziooz8ssmVe6t3fEFG98MGgop9KfTSw5CX8a2CfpflAPA96F1QWn472EQ3IsGHsd3huD9E0-RZbWTnLDp11_u6ldDXVn0HDB6QSwAvJIWfUbZXbHfWGQIQd8nUXG8ea-4n1xMSyznWfPzQdhww3naRt82vscqkY2QuvYDbCWW6aX50Cif1fhhy2fus2DluOmMln-n2wCnA0PIYwXK9HnNgWKE3FQf1mP0qgpOdGr0WpU0qBTMqBVXZF5kjTNWtn_fJwigQPv3bZcDAEy3mTLANL1WMScuoNxDqioikkJpngwBUglasfaEvEHXPcSJxortEUptjfNClB2FVlacuMvf71hdyd8c_0V9_u1]-->
+    </g>
+</svg>

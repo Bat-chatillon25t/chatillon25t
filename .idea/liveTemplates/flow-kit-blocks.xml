@@ -1,0 +1,2964 @@
+<templateSet group="flow-kit-blocks">
+  <template
+          name="BatchProcessing"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.control_flow import BatchProcessing  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := BatchProcessing(...).with_label('Your label here'),  # TODO: change block_name  # TODO: set label # TODO: set constructor parameters&#10;
+    Assign(BatchProcessing.PAR__LIST).to_,  # TODO: assign parameter (type: List of items with item type)&#10;
+    Assign(&quot;the '~key~' that is defined in inner flow with Assign(...).to_flow_parameter('~key~')&quot;).to_,  # TODO: assign parameter (type: Type that is needed by blocks in inner flow that use this parameter.)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type List of items with type of result type of out_block&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ConditionalSkip"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.control_flow import ConditionalSkip  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ConditionalSkip().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ConditionalSkip.PAR__SKIP).to_,  # TODO: assign parameter (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateGcdFile"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.ecu_test import CreateGcdFile  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateGcdFile().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateGcdFile.PAR__CONSTANTS).to_,  # TODO: assign parameter (type: dict)&#10;
+    Assign(CreateGcdFile.PAR__GCD_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(CreateGcdFile.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ObjectApiUserCode"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.ecu_test import ObjectApiUserCode  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ObjectApiUserCode(...).with_label('Your label here'),  # TODO: change block_name  # TODO: set label # TODO: set constructor parameters&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type &#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CheckDirectoryExists"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import CheckDirectoryExists  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CheckDirectoryExists().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CheckDirectoryExists.PAR__PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(CheckDirectoryExists.PAR__RAISE_IF_EXISTS).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(CheckDirectoryExists.PAR__RAISE_IF_NOT_EXISTS).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type bool&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CheckFileExists"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import CheckFileExists  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CheckFileExists().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CheckFileExists.PAR__PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(CheckFileExists.PAR__RAISE_IF_EXISTS).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(CheckFileExists.PAR__RAISE_IF_NOT_EXISTS).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type bool&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CopyFile"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import CopyFile  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CopyFile().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CopyFile.PAR__SOURCE_FILE_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(CopyFile.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(CopyFile.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateDirectory"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import CreateDirectory  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateDirectory().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateDirectory.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateZipArchive"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import CreateZipArchive  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateZipArchive().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateZipArchive.PAR__CONTENT_FOLDER_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(CreateZipArchive.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(CreateZipArchive.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadFile"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import DownloadFile  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadFile().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadFile.PAR__DOWNLOAD_URL).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DownloadFile.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(DownloadFile.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadFile.PAR__DOWNLOAD_TIMEOUT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="SearchFiles"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.file_operation import SearchFiles  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := SearchFiles().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(SearchFiles.PAR__BASE_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(SearchFiles.PAR__SEARCH_PATTERN).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[pathlib.PurePath]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="TGInit"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide import TGInit  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := TGInit().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(TGInit.PAR__ENV_AUTH_KEY).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(TGInit.PAR__PROJECT_ID).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(TGInit.PAR__URL).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type flow_kit.tools.test_guide.test_guide_config.TestGuideConfig&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateShare"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import CreateShare  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateShare().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateShare.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(CreateShare.PAR__CREATE_ARTIFACT_SHARE_DATA).to_,  # TODO: assign parameter if needed (type: tg_api_clients.artifacts.models.create_artifact_share_data.CreateArtifactShareData)&#10;
+    # optional parameter: Assign(CreateShare.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.artifacts.models.share_created_response.ShareCreatedResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteArtifact"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import DeleteArtifact  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteArtifact().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteArtifact.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteArtifact.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import DeleteAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteAttribute.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadArtifact"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import DownloadArtifact  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadArtifact().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadArtifact.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DownloadArtifact.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(DownloadArtifact.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadArtifact.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FindArtifacts"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import FindArtifacts  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FindArtifacts().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FindArtifacts.PAR__DEPOSITORY_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter if needed (type: list[int])&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__ATTRIBUTES).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__END_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__EXTENSION).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__FILE_NAME).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__HASH).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__LAST_ACCESS_END_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__LAST_ACCESS_START_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__LOCKED).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__MAX_FILE_SIZE).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__MIN_FILE_SIZE).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__SHARE_ID).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__SHARED).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__START_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(FindArtifacts.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.artifacts.models.artifact.Artifact]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetArtifact"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import GetArtifact  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetArtifact().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetArtifact.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetArtifact.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.artifacts.models.artifact.Artifact&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import GetAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetAttribute.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(GetAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[str]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PutAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import PutAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PutAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PutAttribute.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(PutAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(PutAttribute.PAR__ATTRIBUTE_VALUES).to_,  # TODO: assign parameter (type: list[str])&#10;
+    # optional parameter: Assign(PutAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RevokeShare"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import RevokeShare  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RevokeShare().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RevokeShare.PAR__ARTIFACT_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(RevokeShare.PAR__SHARE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RevokeShare.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UploadArtifact"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import UploadArtifact  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UploadArtifact().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UploadArtifact.PAR__DEPOSITORY_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(UploadArtifact.PAR__FILE_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(UploadArtifact.PAR__ATTRIBUTES).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(UploadArtifact.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.artifacts.models.artifact_created_response.ArtifactCreatedResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UploadArtifactByJson"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.artifacts import UploadArtifactByJson  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UploadArtifactByJson().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UploadArtifactByJson.PAR__DEPOSITORY_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(UploadArtifactByJson.PAR__EXTERNAL_LINK_DESCRIPTION).to_,  # TODO: assign parameter (type: tg_api_clients.artifacts.models.external_link_description.ExternalLinkDescription)&#10;
+    # optional parameter: Assign(UploadArtifactByJson.PAR__ATTRIBUTES).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(UploadArtifactByJson.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.artifacts.models.artifact_created_response.ArtifactCreatedResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AbortTask"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import AbortTask  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AbortTask().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(AbortTask.PAR__ABORT_REQUEST).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.abort_request.AbortRequest)&#10;
+    Assign(AbortTask.PAR__TASK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(AbortTask.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateFolder"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import CreateFolder  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateFolder().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateFolder.PAR__PLAYBOOK_FOLDER).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook_folder.PlaybookFolder)&#10;
+    # optional parameter: Assign(CreateFolder.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.playbook_folder_post_response.PlaybookFolderPostResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteFolder"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import DeleteFolder  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteFolder().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteFolder.PAR__FOLDER_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(DeleteFolder.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeletePlaybook"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import DeletePlaybook  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeletePlaybook().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeletePlaybook.PAR__PLAYBOOK_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeletePlaybook.PAR__FOLDER).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(DeletePlaybook.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteTask"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import DeleteTask  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteTask().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteTask.PAR__TASK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(DeleteTask.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExecutePlaybook"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import ExecutePlaybook  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExecutePlaybook().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ExecutePlaybook.PAR__PLAYBOOK_EXECUTION_REQUEST).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook_execution_request.PlaybookExecutionRequest)&#10;
+    Assign(ExecutePlaybook.PAR__PLAYBOOK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(ExecutePlaybook.PAR__CHECK_LAST_EXECUTION).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(ExecutePlaybook.PAR__CRON_EXPRESSION).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(ExecutePlaybook.PAR__CRON_TIME_ZONE).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(ExecutePlaybook.PAR__START_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(ExecutePlaybook.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.execute_playbook_response.ExecutePlaybookResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FilterPlaybooks"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import FilterPlaybooks  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FilterPlaybooks().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FilterPlaybooks.PAR__PLAYBOOK_FILTER).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook_filter.PlaybookFilter)&#10;
+    # optional parameter: Assign(FilterPlaybooks.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(FilterPlaybooks.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterPlaybooks.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterPlaybooks.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.playbook_sort.PlaybookSort)&#10;
+    # optional parameter: Assign(FilterPlaybooks.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.playbook.Playbook]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FilterTasks"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import FilterTasks  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FilterTasks().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FilterTasks.PAR__EXECUTION_TASK_FILTER).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.execution_task_filter.ExecutionTaskFilter)&#10;
+    # optional parameter: Assign(FilterTasks.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(FilterTasks.PAR__FIELDS).to_,  # TODO: assign parameter if needed (type: list[tg_api_clients.execution.models.execution_task_field.ExecutionTaskField])&#10;
+    # optional parameter: Assign(FilterTasks.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterTasks.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterTasks.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.execution_task_sort.ExecutionTaskSort)&#10;
+    # optional parameter: Assign(FilterTasks.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.execution_task.ExecutionTask]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetFolder"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetFolder  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetFolder().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetFolder.PAR__FOLDER_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(GetFolder.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.playbook_folder_info.PlaybookFolderInfo&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetFolders"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetFolders  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetFolders().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetFolders.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(GetFolders.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetFolders.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetFolders.PAR__PARENT_ID).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetFolders.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.playbook_folder_sort.PlaybookFolderSort)&#10;
+    # optional parameter: Assign(GetFolders.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.playbook_folder_info.PlaybookFolderInfo]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetPlaybook"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetPlaybook  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetPlaybook().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetPlaybook.PAR__PLAYBOOK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(GetPlaybook.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.playbook.Playbook&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetPlaybooks"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetPlaybooks  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetPlaybooks().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__PLAYBOOK_NAME).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__PLAYBOOK_REVISION).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.playbook_sort.PlaybookSort)&#10;
+    # optional parameter: Assign(GetPlaybooks.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.playbook.Playbook]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetPlaybooksLatest"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetPlaybooksLatest  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetPlaybooksLatest().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__PLAYBOOK_NAME).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.playbook_sort.PlaybookSort)&#10;
+    # optional parameter: Assign(GetPlaybooksLatest.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.playbook.Playbook]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetTask"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetTask  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetTask().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetTask.PAR__TASK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(GetTask.PAR__FIELDS).to_,  # TODO: assign parameter if needed (type: list[tg_api_clients.execution.models.execution_task_field.ExecutionTaskField])&#10;
+    # optional parameter: Assign(GetTask.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.execution_task.ExecutionTask&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetTasks"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import GetTasks  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetTasks().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetTasks.PAR__ASCENDING).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.sort_direction.SortDirection)&#10;
+    # optional parameter: Assign(GetTasks.PAR__FIELDS).to_,  # TODO: assign parameter if needed (type: list[tg_api_clients.execution.models.execution_task_field.ExecutionTaskField])&#10;
+    # optional parameter: Assign(GetTasks.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetTasks.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(GetTasks.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.execution.models.execution_task_sort.ExecutionTaskSort)&#10;
+    # optional parameter: Assign(GetTasks.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.execution.models.execution_task.ExecutionTask]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="MovePlaybook"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import MovePlaybook  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := MovePlaybook().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(MovePlaybook.PAR__PLAYBOOK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    Assign(MovePlaybook.PAR__PLAYBOOK_MOVE_REQUEST).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook_move_request.PlaybookMoveRequest)&#10;
+    # optional parameter: Assign(MovePlaybook.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PostBundle"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import PostBundle  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PostBundle().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PostBundle.PAR__EXECUTION_TASK).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.execution_task.ExecutionTask)&#10;
+    # optional parameter: Assign(PostBundle.PAR__CHECK_LAST_EXECUTION).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(PostBundle.PAR__CRON_EXPRESSION).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(PostBundle.PAR__CRON_TIME_ZONE).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(PostBundle.PAR__START_DATE).to_,  # TODO: assign parameter if needed (type: datetime.datetime)&#10;
+    # optional parameter: Assign(PostBundle.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.create_task_response.CreateTaskResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PostPlaybook"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import PostPlaybook  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PostPlaybook().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PostPlaybook.PAR__PLAYBOOK).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook.Playbook)&#10;
+    # optional parameter: Assign(PostPlaybook.PAR__FOLDER).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(PostPlaybook.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.execution.models.playbook_response.PlaybookResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UpdateFolder"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import UpdateFolder  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UpdateFolder().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UpdateFolder.PAR__FOLDER_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    Assign(UpdateFolder.PAR__PLAYBOOK_FOLDER).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.playbook_folder.PlaybookFolder)&#10;
+    # optional parameter: Assign(UpdateFolder.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UpdateTask"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.execution import UpdateTask  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UpdateTask().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UpdateTask.PAR__EXECUTION_TASK_PATCH).to_,  # TODO: assign parameter (type: tg_api_clients.execution.models.execution_task_patch.ExecutionTaskPatch)&#10;
+    Assign(UpdateTask.PAR__TASK_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(UpdateTask.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ConfigureMaintenanceMode"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import ConfigureMaintenanceMode  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ConfigureMaintenanceMode().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ConfigureMaintenanceMode.PAR__MAINTENANCE_MODE_CONFIGURATION).to_,  # TODO: assign parameter (type: tg_api_clients.platform.models.maintenance_mode_configuration.MaintenanceModeConfiguration)&#10;
+    # optional parameter: Assign(ConfigureMaintenanceMode.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetProjectRoles"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import GetProjectRoles  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetProjectRoles().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetProjectRoles.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.platform.models.project_role.ProjectRole]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveProject"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import RetrieveProject  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveProject().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveProject.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.platform.models.project_component.ProjectComponent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="SendNotifications"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import SendNotifications  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := SendNotifications().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(SendNotifications.PAR__NOTIFICATION).to_,  # TODO: assign parameter (type: tg_api_clients.platform.models.notification.Notification)&#10;
+    # optional parameter: Assign(SendNotifications.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="SendProjectNotification"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import SendProjectNotification  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := SendProjectNotification().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(SendProjectNotification.PAR__PROJECT_NOTIFICATION).to_,  # TODO: assign parameter (type: tg_api_clients.platform.models.project_notification.ProjectNotification)&#10;
+    # optional parameter: Assign(SendProjectNotification.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="SetNotificationBanner"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import SetNotificationBanner  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := SetNotificationBanner().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(SetNotificationBanner.PAR__INFO_BANNER).to_,  # TODO: assign parameter (type: tg_api_clients.platform.models.info_banner.InfoBanner)&#10;
+    # optional parameter: Assign(SetNotificationBanner.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UnsetNotificationBanner"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.platform import UnsetNotificationBanner  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UnsetNotificationBanner().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(UnsetNotificationBanner.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AddQGateAttributes"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import AddQGateAttributes  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AddQGateAttributes().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(AddQGateAttributes.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(AddQGateAttributes.PAR__Q_GATE_ATTRIBUTES).to_,  # TODO: assign parameter (type: list[tg_api_clients.q_gates.models.q_gate_attribute.QGateAttribute])&#10;
+    Assign(AddQGateAttributes.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(AddQGateAttributes.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AddQGatePlanAttributes"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import AddQGatePlanAttributes  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AddQGatePlanAttributes().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(AddQGatePlanAttributes.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(AddQGatePlanAttributes.PAR__Q_GATE_PLAN_ATTRIBUTE).to_,  # TODO: assign parameter (type: list[tg_api_clients.q_gates.models.q_gate_plan_attribute.QGatePlanAttribute])&#10;
+    # optional parameter: Assign(AddQGatePlanAttributes.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateNewQGatePlan"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import CreateNewQGatePlan  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateNewQGatePlan().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateNewQGatePlan.PAR__Q_GATE_PLAN).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_plan.QGatePlan)&#10;
+    # optional parameter: Assign(CreateNewQGatePlan.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateQGate"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import CreateQGate  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateQGate().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateQGate.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(CreateQGate.PAR__Q_GATE).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate.QGate)&#10;
+    # optional parameter: Assign(CreateQGate.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateQGateDependency"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import CreateQGateDependency  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateQGateDependency().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateQGateDependency.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(CreateQGateDependency.PAR__Q_GATE_DEPENDENCY).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_dependency.QGateDependency)&#10;
+    # optional parameter: Assign(CreateQGateDependency.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteQGate"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DeleteQGate  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteQGate().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteQGate.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGate.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteQGate.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteQGateAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DeleteQGateAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteQGateAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteQGateAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGateAttribute.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGateAttribute.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteQGateAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteQGateDependency"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DeleteQGateDependency  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteQGateDependency().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteQGateDependency.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGateDependency.PAR__SOURCE_Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGateDependency.PAR__TARGET_Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteQGateDependency.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteQGatePlan"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DeleteQGatePlan  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteQGatePlan().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteQGatePlan.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteQGatePlan.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteQGatePlanAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DeleteQGatePlanAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteQGatePlanAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteQGatePlanAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(DeleteQGatePlanAttribute.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteQGatePlanAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DuplicatePlan"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import DuplicatePlan  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DuplicatePlan().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DuplicatePlan.PAR__DUPLICATE_PLAN_DATA).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.duplicate_plan_data.DuplicatePlanData)&#10;
+    Assign(DuplicatePlan.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DuplicatePlan.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="EditQGate"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import EditQGate  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := EditQGate().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(EditQGate.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGate.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGate.PAR__Q_GATE_PATCH_DATA).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_patch_data.QGatePatchData)&#10;
+    # optional parameter: Assign(EditQGate.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="EditQGateAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import EditQGateAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := EditQGateAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(EditQGateAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGateAttribute.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGateAttribute.PAR__Q_GATE_ATTRIBUTE_VALUE).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_attribute_value.QGateAttributeValue)&#10;
+    Assign(EditQGateAttribute.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(EditQGateAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="EditQGatePlanAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import EditQGatePlanAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := EditQGatePlanAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(EditQGatePlanAttribute.PAR__ATTRIBUTE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGatePlanAttribute.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGatePlanAttribute.PAR__Q_GATE_PLAN_ATTRIBUTE_VALUE).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_plan_attribute_value.QGatePlanAttributeValue)&#10;
+    # optional parameter: Assign(EditQGatePlanAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="EditQGatePlanMetadata"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import EditQGatePlanMetadata  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := EditQGatePlanMetadata().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(EditQGatePlanMetadata.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(EditQGatePlanMetadata.PAR__Q_GATE_PLAN_CHANGE).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.q_gate_plan_change.QGatePlanChange)&#10;
+    # optional parameter: Assign(EditQGatePlanMetadata.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FilterQGates"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import FilterQGates  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FilterQGates().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FilterQGates.PAR__FILTER_PARAMETERS).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.filter_parameters.FilterParameters)&#10;
+    # optional parameter: Assign(FilterQGates.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterQGates.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterQGates.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.q_gates.models.q_gate.QGate]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetAllDependencies"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import GetAllDependencies  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetAllDependencies().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetAllDependencies.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetAllDependencies.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.q_gates.models.q_gate_dependency.QGateDependency]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetAllQGates"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import GetAllQGates  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetAllQGates().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetAllQGates.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetAllQGates.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.q_gates.models.q_gate.QGate]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetAllStateLogEntries"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import GetAllStateLogEntries  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetAllStateLogEntries().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetAllStateLogEntries.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetAllStateLogEntries.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.q_gates.models.q_gate_plan_log.QGatePlanLog]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PerformPlanAction"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import PerformPlanAction  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PerformPlanAction().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PerformPlanAction.PAR__PLAN_ACTION).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.plan_action.PlanAction)&#10;
+    Assign(PerformPlanAction.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(PerformPlanAction.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PerformQGateAction"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import PerformQGateAction  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PerformQGateAction().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PerformQGateAction.PAR__ACTION).to_,  # TODO: assign parameter (type: tg_api_clients.q_gates.models.action.Action)&#10;
+    Assign(PerformQGateAction.PAR__PLAN_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(PerformQGateAction.PAR__Q_GATE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(PerformQGateAction.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveAllQGatePlans"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.q_gates import RetrieveAllQGatePlans  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveAllQGatePlans().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveAllQGatePlans.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.q_gates.models.q_gate_plan.QGatePlan]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AddReleaseContentByApplyingCoverage"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import AddReleaseContentByApplyingCoverage  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AddReleaseContentByApplyingCoverage().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(AddReleaseContentByApplyingCoverage.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(AddReleaseContentByApplyingCoverage.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ChangeReleaseLocked"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import ChangeReleaseLocked  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ChangeReleaseLocked().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ChangeReleaseLocked.PAR__LOCK_STATE).to_,  # TODO: assign parameter (type: bool)&#10;
+    Assign(ChangeReleaseLocked.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(ChangeReleaseLocked.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateRelease"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import CreateRelease  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateRelease().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateRelease.PAR__RELEASE_COMPONENT).to_,  # TODO: assign parameter (type: tg_api_clients.releases.models.release_component.ReleaseComponent)&#10;
+    # optional parameter: Assign(CreateRelease.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.releases.models.release_id_response.ReleaseIdResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteRelease"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import DeleteRelease  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteRelease().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteRelease.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(DeleteRelease.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="PostCoverageToRelease"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import PostCoverageToRelease  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := PostCoverageToRelease().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(PostCoverageToRelease.PAR__COVERAGE).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(PostCoverageToRelease.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(PostCoverageToRelease.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.releases.models.coverage_filter_definition_uuid.CoverageFilterDefinitionUUID&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveAllReleases"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import RetrieveAllReleases  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveAllReleases().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__DIR).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.sorting_direction.SortingDirection)&#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__QUERY_PARAMETERS).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.search_parameters.SearchParameters)&#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.release_sort.ReleaseSort)&#10;
+    # optional parameter: Assign(RetrieveAllReleases.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.releases.models.release_component.ReleaseComponent]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveRelease"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import RetrieveRelease  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveRelease().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveRelease.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveRelease.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.releases.models.release_component.ReleaseComponent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveReleaseChangelog"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import RetrieveReleaseChangelog  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveReleaseChangelog().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveReleaseChangelog.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveReleaseChangelog.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveReleaseChangelog.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveReleaseChangelog.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.releases.models.changelog_entry.ChangelogEntry]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveReleaseContent"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import RetrieveReleaseContent  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveReleaseContent().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveReleaseContent.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveReleaseContent.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.releases.models.test_case_execution.TestCaseExecution]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveSubReleases"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import RetrieveSubReleases  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveSubReleases().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveSubReleases.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__DIR).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.sorting_direction.SortingDirection)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__QUERY_PARAMETERS).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.search_parameters.SearchParameters)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__SORT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.releases.models.release_sort.ReleaseSort)&#10;
+    # optional parameter: Assign(RetrieveSubReleases.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.releases.models.release_component.ReleaseComponent]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UpdateRelease"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import UpdateRelease  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UpdateRelease().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UpdateRelease.PAR__RELEASE_COMPONENT).to_,  # TODO: assign parameter (type: tg_api_clients.releases.models.release_component.ReleaseComponent)&#10;
+    Assign(UpdateRelease.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(UpdateRelease.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.releases.models.release_id_response.ReleaseIdResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UpdateReleaseContent"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.releases import UpdateReleaseContent  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UpdateReleaseContent().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UpdateReleaseContent.PAR__RELEASE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    Assign(UpdateReleaseContent.PAR__UPDATE_CONTENT).to_,  # TODO: assign parameter (type: tg_api_clients.releases.models.update_release_content_request.UpdateReleaseContentRequest)&#10;
+    # optional parameter: Assign(UpdateReleaseContent.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AddArtifact"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import AddArtifact  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AddArtifact().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(AddArtifact.PAR__FILE_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(AddArtifact.PAR__TCE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(AddArtifact.PAR__CATEGORY).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(AddArtifact.PAR__COMMENT).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(AddArtifact.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateReview"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import CreateReview  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateReview().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateReview.PAR__TCE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(CreateReview.PAR__ATTACHMENT_FILES).to_,  # TODO: assign parameter if needed (type: list[pathlib.PurePath])&#10;
+    # optional parameter: Assign(CreateReview.PAR__ATTACHMENT_REFERENCES).to_,  # TODO: assign parameter if needed (type: list[int])&#10;
+    # optional parameter: Assign(CreateReview.PAR__COMMENT).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(CreateReview.PAR__CONTACTS).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(CreateReview.PAR__CUSTOM_EVALUATION).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(CreateReview.PAR__DEFECT_CLASS).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(CreateReview.PAR__DEFECT_PRIORITY).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(CreateReview.PAR__INVALID_RUN).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(CreateReview.PAR__SUMMARY).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(CreateReview.PAR__TAGS).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(CreateReview.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # optional parameter: Assign(CreateReview.PAR__TICKETS).to_,  # TODO: assign parameter if needed (type: list[str])&#10;
+    # optional parameter: Assign(CreateReview.PAR__VERDICT).to_,  # TODO: assign parameter if needed (type: tg_api_clients.report_mgmt.models.verdict.Verdict)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.review_create_response.ReviewCreateResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteReport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import DeleteReport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteReport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteReport.PAR__REPORT_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(DeleteReport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteStatus"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import DeleteStatus  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteStatus().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteStatus.PAR__DELETE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteStatus.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.delete_status.DeleteStatus&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadAtx"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import DownloadAtx  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadAtx().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadAtx.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(DownloadAtx.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DownloadAtx.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadAtx.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadExport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import DownloadExport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadExport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadExport.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(DownloadExport.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DownloadExport.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadExport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadTmsExport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import DownloadTmsExport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadTmsExport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadTmsExport.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(DownloadTmsExport.PAR__TMS_TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DownloadTmsExport.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadTmsExport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExportFilterResults"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import ExportFilterResults  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExportFilterResults().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ExportFilterResults.PAR__FILTER_PARAMETERS).to_,  # TODO: assign parameter (type: tg_api_clients.report_mgmt.models.filter_parameters.FilterParameters)&#10;
+    # optional parameter: Assign(ExportFilterResults.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExportTmsFilterResults"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import ExportTmsFilterResults  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExportTmsFilterResults().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ExportTmsFilterResults.PAR__FILTER_PARAMETERS).to_,  # TODO: assign parameter (type: tg_api_clients.report_mgmt.models.filter_parameters.FilterParameters)&#10;
+    Assign(ExportTmsFilterResults.PAR__TMS_CONFIG_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(ExportTmsFilterResults.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FetchHistory"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import FetchHistory  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FetchHistory().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FetchHistory.PAR__END_DATE).to_,  # TODO: assign parameter (type: datetime.datetime)&#10;
+    Assign(FetchHistory.PAR__START_DATE).to_,  # TODO: assign parameter (type: datetime.datetime)&#10;
+    # optional parameter: Assign(FetchHistory.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FetchHistory.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FetchHistory.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.report_mgmt.models.report_history_item.ReportHistoryItem]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FetchReviewById"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import FetchReviewById  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FetchReviewById().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FetchReviewById.PAR__REVIEW_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(FetchReviewById.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.review.Review&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FetchTestCaseExecutionsForReport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import FetchTestCaseExecutionsForReport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FetchTestCaseExecutionsForReport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FetchTestCaseExecutionsForReport.PAR__REPORT_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(FetchTestCaseExecutionsForReport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.report_mgmt.models.test_case_execution_link.TestCaseExecutionLink]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="FilterTestCaseExecutions"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import FilterTestCaseExecutions  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := FilterTestCaseExecutions().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(FilterTestCaseExecutions.PAR__FILTER_PARAMETERS).to_,  # TODO: assign parameter (type: tg_api_clients.report_mgmt.models.filter_parameters.FilterParameters)&#10;
+    # optional parameter: Assign(FilterTestCaseExecutions.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterTestCaseExecutions.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(FilterTestCaseExecutions.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.report_mgmt.models.test_case_execution.TestCaseExecution]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetAtxSettings"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import GetAtxSettings  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetAtxSettings().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetAtxSettings.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.atx_configuration.AtxConfiguration&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetProjectStatistic"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import GetProjectStatistic  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetProjectStatistic().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(GetProjectStatistic.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.project_statistic.ProjectStatistic&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GetReportUploadState"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import GetReportUploadState  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GetReportUploadState().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(GetReportUploadState.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(GetReportUploadState.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.upload_status.UploadStatus&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ProjectFilterTestCaseExecutions"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import ProjectFilterTestCaseExecutions  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ProjectFilterTestCaseExecutions().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(ProjectFilterTestCaseExecutions.PAR__FILTER_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(ProjectFilterTestCaseExecutions.PAR__LIMIT).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(ProjectFilterTestCaseExecutions.PAR__OFFSET).to_,  # TODO: assign parameter if needed (type: int)&#10;
+    # optional parameter: Assign(ProjectFilterTestCaseExecutions.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.report_mgmt.models.test_case_execution.TestCaseExecution]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveAtxExportState"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveAtxExportState  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveAtxExportState().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveAtxExportState.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveAtxExportState.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_progress.TaskProgress&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveExportState"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveExportState  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveExportState().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveExportState.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveExportState.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_progress.TaskProgress&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveExportTmsState"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveExportTmsState  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveExportTmsState().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveExportTmsState.PAR__TMS_TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveExportTmsState.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.tms_task_progress.TmsTaskProgress&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveLastExecution"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveLastExecution  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveLastExecution().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveLastExecution.PAR__TEST_CASE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveLastExecution.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.test_case_execution.TestCaseExecution&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveReviews"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveReviews  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveReviews().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveReviews.PAR__TCE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveReviews.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.report_mgmt.models.review.Review]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTce"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import RetrieveTce  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTce().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveTce.PAR__TCE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveTce.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.test_case_execution.TestCaseExecution&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="StartAtxExport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import StartAtxExport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := StartAtxExport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(StartAtxExport.PAR__REPORT_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(StartAtxExport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # optional parameter: Assign(StartAtxExport.PAR__USE_EXPORT_STORAGE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UploadReport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.report_mgmt import UploadReport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UploadReport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UploadReport.PAR__CONVERTER_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(UploadReport.PAR__FILE_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    # optional parameter: Assign(UploadReport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.report_mgmt.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DownloadReport"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.reporting import DownloadReport  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DownloadReport().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DownloadReport.PAR__TARGET_PATH).to_,  # TODO: assign parameter (type: pathlib.PurePath)&#10;
+    Assign(DownloadReport.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DownloadReport.PAR__ALLOW_OVERWRITE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DownloadReport.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type pathlib.PurePath&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveAllTemplates"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.reporting import RetrieveAllTemplates  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveAllTemplates().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveAllTemplates.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.reporting.models.template.Template]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveReportState"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.reporting import RetrieveReportState  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveReportState().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveReportState.PAR__TASK_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveReportState.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.reporting.models.task_progress.TaskProgress&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTemplateParameters"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.reporting import RetrieveTemplateParameters  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTemplateParameters().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveTemplateParameters.PAR__TEMPLATE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(RetrieveTemplateParameters.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.reporting.models.template_parameter.TemplateParameter]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="StartReportGeneration"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.reporting import StartReportGeneration  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := StartReportGeneration().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(StartReportGeneration.PAR__REPORT_DATA).to_,  # TODO: assign parameter (type: tg_api_clients.reporting.models.abstract_report_data.AbstractReportData)&#10;
+    Assign(StartReportGeneration.PAR__TEMPLATE_ID).to_,  # TODO: assign parameter (type: int)&#10;
+    # optional parameter: Assign(StartReportGeneration.PAR__FILE_NAME).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(StartReportGeneration.PAR__KEEP_DATA_SOURCE).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(StartReportGeneration.PAR__LOCALE).to_,  # TODO: assign parameter if needed (type: tg_api_clients.reporting.models.supported_locale.SupportedLocale)&#10;
+    # optional parameter: Assign(StartReportGeneration.PAR__REQUEST_TICKET_STATUS).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(StartReportGeneration.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.reporting.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateCustomAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import CreateCustomAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateCustomAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateCustomAttribute.PAR__CUSTOM_ATTRIBUTE).to_,  # TODO: assign parameter (type: tg_api_clients.test_infrastructure.models.custom_attribute.CustomAttribute)&#10;
+    # optional parameter: Assign(CreateCustomAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.custom_attribute_id_response.CustomAttributeIdResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateCustomAttributeEntry"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import CreateCustomAttributeEntry  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateCustomAttributeEntry().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateCustomAttributeEntry.PAR__CUSTOM_ATTRIBUTE_ENTRY).to_,  # TODO: assign parameter (type: tg_api_clients.test_infrastructure.models.custom_attribute_entry.CustomAttributeEntry)&#10;
+    Assign(CreateCustomAttributeEntry.PAR__CUSTOM_ATTRIBUTE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(CreateCustomAttributeEntry.PAR__TEST_RESOURCE_MACHINE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(CreateCustomAttributeEntry.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateTestResource"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import CreateTestResource  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateTestResource().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateTestResource.PAR__TEST_RESOURCE).to_,  # TODO: assign parameter (type: tg_api_clients.test_infrastructure.models.test_resource.TestResource)&#10;
+    # optional parameter: Assign(CreateTestResource.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.test_resource_id_response.TestResourceIdResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="CreateTestResourceMachine"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import CreateTestResourceMachine  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := CreateTestResourceMachine().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(CreateTestResourceMachine.PAR__TEST_RESOURCE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(CreateTestResourceMachine.PAR__TEST_RESOURCE_MACHINE).to_,  # TODO: assign parameter (type: tg_api_clients.test_infrastructure.models.test_resource_machine.TestResourceMachine)&#10;
+    # optional parameter: Assign(CreateTestResourceMachine.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.test_resource_machine_id_response.TestResourceMachineIdResponse&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteCustomAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import DeleteCustomAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteCustomAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteCustomAttribute.PAR__CUSTOM_ATTRIBUTE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteCustomAttribute.PAR__DELETE_ALL_ENTRIES).to_,  # TODO: assign parameter if needed (type: bool)&#10;
+    # optional parameter: Assign(DeleteCustomAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="DeleteTestResource"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import DeleteTestResource  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := DeleteTestResource().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(DeleteTestResource.PAR__TEST_RESOURCE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(DeleteTestResource.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveCustomAttributes"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveCustomAttributes  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveCustomAttributes().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveCustomAttributes.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[tg_api_clients.test_infrastructure.models.custom_attribute.CustomAttribute]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveLatestCustomAttributeEntry"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveLatestCustomAttributeEntry  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveLatestCustomAttributeEntry().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveLatestCustomAttributeEntry.PAR__CUSTOM_ATTRIBUTE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(RetrieveLatestCustomAttributeEntry.PAR__TEST_RESOURCE_MACHINE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveLatestCustomAttributeEntry.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.custom_attribute_entry.CustomAttributeEntry&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTestResource"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveTestResource  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTestResource().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveTestResource.PAR__TEST_RESOURCE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveTestResource.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.test_resource.TestResource&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTestResourceIds"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveTestResourceIds  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTestResourceIds().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # optional parameter: Assign(RetrieveTestResourceIds.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[str]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTestResourceMachine"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveTestResourceMachine  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTestResourceMachine().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveTestResourceMachine.PAR__TEST_RESOURCE_MACHINE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveTestResourceMachine.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.test_resource_machine.TestResourceMachine&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="RetrieveTestResourceMachineByResourceLocationId"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import RetrieveTestResourceMachineByResourceLocationId  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := RetrieveTestResourceMachineByResourceLocationId().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(RetrieveTestResourceMachineByResourceLocationId.PAR__TEST_RESOURCE_LOCATION).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(RetrieveTestResourceMachineByResourceLocationId.PAR__TEST_RESOURCE_MACHINE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(RetrieveTestResourceMachineByResourceLocationId.PAR__TEST_RESOURCE_NAME).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(RetrieveTestResourceMachineByResourceLocationId.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.test_resource_machine.TestResourceMachine&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="StartDeleteTestResourceMachine"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import StartDeleteTestResourceMachine  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := StartDeleteTestResourceMachine().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(StartDeleteTestResourceMachine.PAR__TEST_RESOURCE_MACHINE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(StartDeleteTestResourceMachine.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.test_infrastructure.models.task_ref.TaskRef&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UpdateCustomAttribute"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.test_guide.test_infrastructure import UpdateCustomAttribute  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UpdateCustomAttribute().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UpdateCustomAttribute.PAR__CUSTOM_ATTRIBUTE).to_,  # TODO: assign parameter (type: tg_api_clients.test_infrastructure.models.custom_attribute.CustomAttribute)&#10;
+    Assign(UpdateCustomAttribute.PAR__CUSTOM_ATTRIBUTE_ID).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(UpdateCustomAttribute.PAR__TG_CONFIG).to_,  # TODO: assign parameter if needed (type: flow_kit.tools.test_guide.test_guide_config.TestGuideConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraAddIssueComment"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraAddIssueComment  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraAddIssueComment().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraAddIssueComment.PAR__ISSUE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(JiraAddIssueComment.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    Assign(JiraAddIssueComment.PAR__MESSAGE).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraAssignIssue"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraAssignIssue  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraAssignIssue().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraAssignIssue.PAR__ISSUE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(JiraAssignIssue.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    Assign(JiraAssignIssue.PAR__USER).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraEditIssue"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraEditIssue  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraEditIssue().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraEditIssue.PAR__FIELDS).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_issue_fields.JiraIssueFields)&#10;
+    Assign(JiraEditIssue.PAR__ISSUE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(JiraEditIssue.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraGetIssue"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraGetIssue  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraGetIssue().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraGetIssue.PAR__ISSUE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(JiraGetIssue.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type flow_kit.tools.jira.jira_issue.JiraIssue&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraInit"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraInit  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraInit().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraInit.PAR__URL).to_,  # TODO: assign parameter (type: str)&#10;
+    # optional parameter: Assign(JiraInit.PAR__ENV_KEY_PASSWORD).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(JiraInit.PAR__ENV_KEY_TOKEN).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # optional parameter: Assign(JiraInit.PAR__ENV_KEY_USER).to_,  # TODO: assign parameter if needed (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type flow_kit.tools.jira.jira_config.JiraConfig&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraIssueTransition"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraIssueTransition  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraIssueTransition().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraIssueTransition.PAR__ISSUE_KEY).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(JiraIssueTransition.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    Assign(JiraIssueTransition.PAR__STATUS).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="JiraJql"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.tools.jira import JiraJql  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := JiraJql().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(JiraJql.PAR__JIRA_CONFIG).to_,  # TODO: assign parameter (type: flow_kit.tools.jira.jira_config.JiraConfig)&#10;
+    Assign(JiraJql.PAR__JQL).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type list[flow_kit.tools.jira.jira_issue.JiraIssue]&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ArtifactUploadedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ArtifactUploadedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ArtifactUploadedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_artifact_uploaded_event.WebhookArtifactUploadedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="AtxReportUploadedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import AtxReportUploadedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := AtxReportUploadedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_atx_report_uploaded_event.WebhookAtxReportUploadedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExecutionTaskStateChangedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ExecutionTaskStateChangedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExecutionTaskStateChangedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_execution_task_state_changed_event.WebhookExecutionTaskStateChangedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExportPdfTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ExportPdfTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExportPdfTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_export_pdf_webhook_event.WebhookExportPdfWebhookEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExportReportFilterTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ExportReportFilterTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExportReportFilterTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_export_report_filter_event.WebhookExportReportFilterEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExportTestcasesWithFlowTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ExportTestcasesWithFlowTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExportTestcasesWithFlowTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.flow.models.export_testcases_with_flow_trigger_payload.ExportTestcasesWithFlowTriggerPayload&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ExternalEventTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ExternalEventTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ExternalEventTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.flow.models.external_event_payload.ExternalEventPayload&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="QGateStateChangedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import QGateStateChangedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := QGateStateChangedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_q_gate_state_changed_event.WebhookQGateStateChangedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ReleaseStateChangedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ReleaseStateChangedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ReleaseStateChangedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_release_state_changed_event.WebhookReleaseStateChangedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="ReviewCreatedTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import ReviewCreatedTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := ReviewCreatedTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.webhook.models.webhook_review_created_event.WebhookReviewCreatedEvent&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="TestResourceMachineWentOfflineTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import TestResourceMachineWentOfflineTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := TestResourceMachineWentOfflineTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.flow.models.test_resource_machine_went_offline_event_payload.TestResourceMachineWentOfflineEventPayload&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="TimeControlledTrigger"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.trigger import TimeControlledTrigger  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := TimeControlledTrigger().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type tg_api_clients.flow.models.time_trigger_payload.TimeTriggerPayload&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="GenericUserCode"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.user_code import GenericUserCode  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := GenericUserCode(...).with_label('Your label here'),  # TODO: change block_name  # TODO: set label # TODO: set constructor parameters&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type &#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+  <template
+          name="UserLink"
+          toReformat="false"
+          toShortenFQNames="true"
+          value="# from flow_kit.library.user_code import UserLink  # TODO: move import to top of this file if needed&#10;
+.add_block_with(&#10;
+    block_name := UserLink().with_label('Your label here'),  # TODO: change block_name  # TODO: set label &#10;
+    Assign(UserLink.PAR__TEXT).to_,  # TODO: assign parameter (type: str)&#10;
+    Assign(UserLink.PAR__URL).to_,  # TODO: assign parameter (type: str)&#10;
+    # result_alias='alias_name',  # TODO: uncomment and change alias_name if needed&#10;
+    # required_blocks=[],  # TODO: uncomment and add required blocks here if needed&#10;
+    # block returns type None&#10;
+)">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="Python_Top_Level" value="false" />
+    </context>
+  </template>
+</templateSet>

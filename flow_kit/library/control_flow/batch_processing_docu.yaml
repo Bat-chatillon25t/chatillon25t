@@ -1,0 +1,38 @@
+description: |
+    BatchProcessing is a FlowBlock that applies a defined flow to each item of an input list/batch. The BatchProcessing
+    block returns a list containing the out_block results for the flow runs of all items of the input list.
+
+    In order to use the BatchProcessing block a flow and an out_block need to be specified. The specification for both
+    elements is described in more detail below:
+    - flow: Flow is the sub-flow which is run one time for every item of the parameter "list" of the
+               BatchProcessing block. The inner blocks of this sub-flow need to be defined the same way as overall
+               flows of the flow-kit are defined.
+
+    - out_block: The out_block defines the block from which the result values are taken for the output of the
+                 BatchProcessing block. It must be a block contained in the sub-flow given by the flow defined
+                 in the constructor of BatchProcessing.
+
+    For detailed information how to use this block refer to examples/batch_processing_usage.py.
+
+parameters:
+    - defined_name: PAR__LIST
+      key: list
+      value_type: List of items with item type
+      description: List of items to flow.
+    - defined_name: ""
+      key: the '~key~' that is defined in inner flow with Assign(...).to_flow_parameter('~key~')
+      value_type: Type that is needed by blocks in inner flow that use this parameter.
+      description: Additionally to PAR_LIST one parameter for each flow parameter is present here.
+
+result:
+    value_type: List of items with type of result type of out_block
+    description: |
+        List of results of all out_block iteration runs. If an out_block is not executed in an iteration run, e.g. due
+        to a ConditionalSkip block before the out_block, no result is added to the result list for this iteration run.
+        This means these out_block iteration runs are filtered from the result list of the BatchProcessing block.
+        If the out_block of any iteration gets SKIPPED or ABORTED the overall state of the BatchProcessing block will
+        also be SKIPPED or ABORTED.
+
+images:
+    - name: BatchProcessing overview
+      path: batch_processing_image1.svg

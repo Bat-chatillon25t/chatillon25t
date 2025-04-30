@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DEPOSITORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DEPOSITORIES>
+		<ELEMENT dkey="test.guide">
+			<DVALUE xsi:type="testGuideDepository">
+				<URL xsi:type="string">192.168.166.20</URL>
+				<PORT xsi:type="integer">8085</PORT>
+				<PROJECT_ID xsi:type="integer">23</PROJECT_ID>
+				<AUTH-KEY xsi:type="string">cenYvEs=.2pgHwSUlfVfEddJhe9qLFnh4WeNdevFAm-CVDaLibXA=</AUTH-KEY>
+				<DEPOSITORY-ID xsi:type="string">asdf</DEPOSITORY-ID>
+			</DVALUE>
+		</ELEMENT>
+	</DEPOSITORIES>
+</DEPOSITORY-SETTINGS>
